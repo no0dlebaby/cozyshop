@@ -11,7 +11,7 @@ const { faker } = require('@faker-js/faker');
 
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://ecommerce-site-erz0.onrender.com',
     credentials: true
 }));
 app.use(express.json())
