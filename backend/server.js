@@ -10,10 +10,7 @@ const client = new pg.Client(process.env.DATABASE_URL||'postgresql://ecommercedb
 const { faker } = require('@faker-js/faker');
 
 
-app.use(cors({
-    origin: 'https://ecommerce-site-erz0.onrender.com',
-    credentials: true
-}));
+app.use(cors());
 app.use(express.json())
 app.use(require('morgan')('dev'))
 
