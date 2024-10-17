@@ -8,7 +8,7 @@ const ProductDetails = ({addToCart}) => {
   const [addedToCart, setAddedToCart]= useState(false)
 
   useEffect(() => {
-    fetch(`http://localhost:2445/api/products/${id}`)
+    fetch(`https://ecommerce-site-erz0.onrender.com/api/products/${id}`)
       .then(response => response.json())
       .then(data => setProduct(data))
       .catch(error => console.error('error fetching product details:', error))

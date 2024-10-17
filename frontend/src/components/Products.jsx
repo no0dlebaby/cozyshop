@@ -22,7 +22,7 @@ function Products({ addToCart }) {
   }
 
   useEffect(() => {
-    fetch('http://localhost:2445/api/products')
+    fetch('https://ecommerce-site-erz0.onrender.com/api/products')
       .then(response => response.json())
       .then(data => {console.log(data)
         setProducts(data)})

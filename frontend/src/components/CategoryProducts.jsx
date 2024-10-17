@@ -27,7 +27,7 @@ function CategoryProducts({ addToCart }) {
     const fetchCategoryProducts = async () => {
       try {
 
-        const response = await fetch(`http://localhost:2445/api/products?category=${categoryId}`);
+        const response = await fetch(`https://ecommerce-site-erz0.onrender.com/api/products?category=${categoryId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }

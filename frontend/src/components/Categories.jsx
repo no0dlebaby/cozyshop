@@ -11,7 +11,7 @@ function Categories() {
     const fetchCategories = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:2445/api/categories');
+        const response = await fetch('https://ecommerce-site-erz0.onrender.com/api/categories');
         if (!response.ok) {
           throw new Error('Failed to fetch categories');
         }
